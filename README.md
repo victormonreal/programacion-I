@@ -1,6 +1,5 @@
 # programacion-I
+
 FES Acatlan - MAC - Programación 1 - Equipo 1
 
-Repositorio para los proyectos y tareas de la materia.
-
-Integrantes:
+Repositorio dedicado a las tareas y proyecto final por equipo de la materia.
