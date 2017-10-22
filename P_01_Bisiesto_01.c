@@ -5,39 +5,49 @@
 
 int main()
 
-{int fecha,respuesta;
+{	
+	int fecha,respuesta;
 
-	do {
-	system ("cls");
+	do 
+	{
+		system ("cls");
 	
-	printf("Este es un programa que determina si un año dado es o no es bisiesto.\n");
+		printf("Este es un programa que determina si un año dado es o no es bisiesto.\n");
 	
-	printf("Por favor, introduce un año: ");
-	scanf("%i",&fecha);
+		printf("Por favor, introduce un año: ");
+		scanf("%i",&fecha);
 	
-	if (fecha % 4 == 0) {
-		if (fecha % 100 == 0) {
-			if (fecha % 400 == 0) {
-				printf ("Ese año es un año bisiesto.");
+		if (fecha % 4 == 0) 
+		{
+			if (fecha % 100 == 0) 
+			{
+				if (fecha % 400 == 0) 
+				{
+					printf ("\nEl año %i es un año bisiesto.\n",fecha);
+				}
+			
+				else 
+				{
+					printf ("\nEl año %i no es un bisiesto.\n",fecha);
+				}
+			
 			}
-			else {
-				printf ("Ese año no es un bisiesto.");
+		
+			else 
+			{
+				printf ("\nEl año %i es un año bisiesto.\n",fecha);
 			}
-			
-		}
-		else {
-			printf ("Ese año es un año bisiesto.");
-		}
-			
-			
-	}
-	else {
-		printf ("Ese año no es un año bisiesto.");
-	}
 	
-	printf("Deseas repetir el proceso? Escribe 1 para SI.");
-	scanf("%i",&respuesta);
+		}
 	
+		else 
+		{
+			printf ("\nEl año %i no es un año bisiesto.\n",fecha);
+		}
+	
+		printf("\nDeseas repetir el proceso? Escribe 1 para repetir: ");
+		scanf("%i",&respuesta);
+				
 	} while(respuesta==1);
 
 	return 0;
