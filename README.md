@@ -11,7 +11,9 @@ Integrantes:
 -Ramirez Chavez Mónica
 -Santiago Reyes Donovan Ariel
 
-Enlaces:
--Tutorial oficial sobre el funcionamiento de Github (Chequenlo! Es cortito): https://guides.github.com/activities/hello-world/
+Enlaces útiles:
+-Crea tu cuenta de GitHub: https://github.com/join
+-Guarda el enlace a este, nuestro repositorio: https://github.com/ArielASR/programacion-I
+-Tutorial oficial de Github "Hola Mundo" (Chequenlo! Es cortito y está muy completo): https://guides.github.com/activities/hello-world/
 -Github para PC de escritorio: https://desktop.github.com/
 -Github para Android (FastHub for GitHub): https://play.google.com/store/apps/details?id=com.fastaccess.github&hl=es
