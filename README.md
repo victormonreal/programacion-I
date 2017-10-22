@@ -19,3 +19,4 @@ Enlaces útiles:
 -Github para Android (FastHub for GitHub): https://play.google.com/store/apps/details?id=com.fastaccess.github&hl=es
 -Nuestro repositorio está publicado como página web en: https://arielasr.github.io/programacion-I/
 (Se basa en el contenido de la branch gh_pages, si quieres editarla, adelante!)
+-Github Education: https://education.github.com/pack (Por ser estudiantes, podemos obtener un paquete gratuito de herramientas de desarrollo y acceso a funciones premium de Github por el tiempo que dure la carrera. Si les interesa, solo necesitan su correo de Comunidad Unam.)
