@@ -1,0 +1,108 @@
+int gotoxy(int x, int y){
+	HANDLE hcon;
+	hcon = GetStdHandle(STD_OUTPUT_HANDLE);
+	COORD dwPos;
+	dwPos.X = x;
+	dwPos.Y = y;
+	SetConsoleCursorPosition(hcon,dwPos);
+	return 0;
+}
+int limpia(){
+	system("cls");
+	system("Color 0a");
+	return 0;
+}
+int marco(){
+	int x, y;
+	for(x=1;x<40;x++)
+	{
+		gotoxy(x + 40,1);
+		printf("%c",205);
+		gotoxy(41-x,1);
+		printf("%c",205);
+		gotoxy(x + 40,25);
+		printf("%c",205);
+		gotoxy(41-x,25);
+		printf("%c",205);
+		sleep(0);
+	};
+	gotoxy(1,1);
+	printf("%c",201);
+	gotoxy(80,1);
+	printf("%c",187);
+	gotoxy(1,25);
+	printf("%c",200);
+	gotoxy(80,25);
+	printf("%c",188);
+	for(y=1;y<13;y++)
+	{
+		gotoxy(1,y+1);
+		printf("%c",186);
+		gotoxy(80,y+1);
+		printf("%c",186);
+		gotoxy(1,25-y);
+		printf("%c",186);
+		gotoxy(80,25-y);
+		printf("%c",186);
+		sleep(0);
+	};
+	return 0;
+}
+int Inicio(){
+	limpia();
+	marco();
+	gotoxy(20,2);
+	printf("Universidad Nacional Aut%cnoma de M%cxico",162,130);
+	gotoxy(20,3);
+	printf("Facultad de Estudios Superiores Acatlan");
+	gotoxy(10,10);
+	printf("Existen varias formas para saber si un a%co es bisiesto.",164);
+	gotoxy(10,11);
+	printf("Este programa ultiliza la siguiente ecuaci%cn para evaluarlo: ",162);
+	gotoxy(10,12);
+	printf("Algorit de divisibilidad: a = pq + r. Donde p, q y r son");
+	gotoxy(10,13);
+	printf("n%cmeros enteros. Tomando en cuenta lo anterior, un n%cmero",163,163);
+	gotoxy(10,14);
+	printf("es divisible si r = 0.");
+	gotoxy(10,16);
+	printf("En el quipo de programaci%cn colaborar%cn:",162,162);
+	gotoxy(15,18);
+	printf("Galv%cn Lugo Alberto Hazel",161);
+	gotoxy(15,19);
+	printf("Hern%cndez Flores Luis %cngel",160,181);
+	gotoxy(15,20);
+	printf("Monreal Tovar Victor Armando");
+	gotoxy(15,21);
+	printf("Ram%crez Ch%cvez M%cnica",161,160,162);
+	gotoxy(15,22);
+	printf("Santiago Reyes Donovan Ariel");
+	gotoxy(5,24);
+	system("Pause");
+}
+int IngresaDatos(){
+	int year; 
+	limpia();
+	marco();
+	gotoxy(6,13);
+	printf("Ingrese el año para la evaluaci%cn:",162);
+	gotoxy(41,13);
+	scanf("%d",&year);
+	return year;
+}
+int Evaluar(int year){
+	int Modulo1,Modulo2,Modulo3;
+	Modulo1 = year % 400;
+	Modulo2 = year % 100;
+	Modulo3 = year % 4;
+	if(Modulo1 == 0){
+		return 1;
+	}else{		
+		if(Modulo2 != 0 && Modulo3 == 0){
+			return 1;
+		}else{
+			return 2;
+		}
+		
+	}
+}
